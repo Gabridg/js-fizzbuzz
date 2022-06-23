@@ -32,12 +32,11 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 for (let i = 1; i <= 100; i++) {
     if (i % 3 == 0) {
         console.log('FIZZ');
-    }
-    if (i % 5 == 0) {
+    } else if (i % 5 == 0) {
         console.log('BUZZ');
-    }
-    if (i % 5 == 0 && i % 3 == 0) {
+    } else if (i % 5 == 0 && i % 3 == 0) {
         console.log('FIZZBUZZ')
+    } else {
+        console.log(i);
     }
-    console.log(i);
 }
