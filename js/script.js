@@ -30,8 +30,14 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 
 // 1-
 for (let i = 1; i <= 100; i++) {
-    console.log(i);
     if (i % 3 == 0) {
         console.log('FIZZ');
     }
+    if (i % 5 == 0) {
+        console.log('BUZZ');
+    }
+    if (i % 5 == 0 && i % 3 == 0) {
+        console.log('FIZZBUZZ')
+    }
+    console.log(i);
 }
