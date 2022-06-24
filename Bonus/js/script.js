@@ -28,16 +28,20 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 */
 
 
-// 1-
+const listNumber = document.getElementById('list-number');
+
+let listItem = '';
+
 for (let i = 1; i <= 100; i++) {
-    if (i % 3 == 0) {
-        console.log('FIZZ');
-    }
-    if (i % 5 == 0) {
-        console.log('BUZZ');
-    }
     if (i % 5 == 0 && i % 3 == 0) {
-        console.log('FIZZBUZZ')
+        listItem += '<li class:"red fw-bold">FIZZBUZZ</li>'
+    } else if (i % 3 == 0) {
+        listItem += '<li class:"yellow fw-bold">FIZZ</li>';
+    } else if (i % 5 == 0) {
+        listItem += '<li class:"green fw-bold">BUZZ</li>'
+    } else {
+        listItem += `<li>${i}</li>`;
     }
-    console.log(i);
 }
+
+listNumber.innerHTML = listItem;
