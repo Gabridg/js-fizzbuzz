@@ -28,17 +28,19 @@ cliccato su un bottone
 CSS a piacimento
 */
 
-const mailChecked = ['marc@boolean.it', 'gabriele@boolean.it'];
+const mailChecked = ['marco@boolean.it', 'gabriele@boolean.it'];
 const inputMail = document.getElementById('user-mail');
 const button = document.getElementById('button');
 
 
 button.addEventListener('click', function () {
     let userMail = inputMail.value
-    if (userMail === mailChecked) {
+    if (userMail === mailChecked[0] || userMail === mailChecked[1]) {
         alert('Benvenuto, mail riconosciua!');
     } else {
         alert('Spiacenti, mail non riconosciuta!');
     }
+
+
 })
 
