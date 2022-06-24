@@ -40,7 +40,6 @@ button.addEventListener('click', function () {
     } else {
         alert('Spiacenti, mail non riconosciuta!');
     }
-
-
 })
+
 
