@@ -27,3 +27,18 @@ Provare a prendere la mail dell'utente da un input e fare la verifica dopo aver
 cliccato su un bottone
 CSS a piacimento
 */
+
+const mailChecked = ['marc@boolean.it', 'gabriele@boolean.it'];
+const inputMail = document.getElementById('user-mail');
+const button = document.getElementById('button');
+
+
+button.addEventListener('click', function () {
+    let userMail = inputMail.value
+    if (userMail === mailChecked) {
+        alert('Benvenuto, mail riconosciua!');
+    } else {
+        alert('Spiacenti, mail non riconosciuta!');
+    }
+})
+
