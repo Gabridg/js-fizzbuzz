@@ -8,7 +8,8 @@ button.addEventListener('click', function () {
 
     if (dado > cpuDado) {
         alert('Hai vinto !!');
-    } else {
+    } else if (dado < cpuDado) {
         alert('Hai perso!!');
     }
+
 })
